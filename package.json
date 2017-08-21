@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "x-loader-simulation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yassermorteza/x-loader-simulation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yassermorteza/x-loader-simulation/issues"
+  },
+  "homepage": "https://github.com/Yassermorteza/x-loader-simulation#readme"
+}
