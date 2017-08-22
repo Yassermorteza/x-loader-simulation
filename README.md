@@ -1,9 +1,6 @@
 <<<<<<< HEAD
 # x-loader-simulation [![Build Status](https://travis-ci.org/Yassermorteza/x-loader-simulation.svg?branch=master)](https://travis-ci.org/Yassermorteza/x-loader-simulation) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 =======
-# x-loader-simulation    [![Build Status](https://travis-ci.org/Yassermorteza/x-loader-simulation.svg?branch=master)](https://travis-ci.org/Yassermorteza/x-loader-simulation)
->>>>>>> fee1426c64b933c2bfa9fed53d7c1059a8a2c3c4
-
 
 Loader Simulation
 
