@@ -3,24 +3,38 @@ var simulateProgress = require('simulate-progress');
 /* jshint browserify: true */
 
 var div = document.getElementsByTagName('div'),
-    loader = div[0],
-    progress = div[1];
+    button = document.querySelectorAll('button');
 
-function progressCallback (percent){
+button.forEach(function(el, index){
 
-}
+  function progressCallback (percent){
+    if(index===0){
+   div[2].style.width = percent + "%";
+    }else{
+     div[5].style.width = percent + "%";
+    }
+  }
 
-function finishCallback(){
+    function finishCallback(){
+     if(index===0){
+      div[2].classList.add('finished');
+     }else {
+      div[5].classList.add('finished');
+     }
+    }
 
- loader.addClass('finished');
+    function startSimulation(){
+      if(index===0){
+       div[2].classList.remove('finished');
+      }else {
+       div[5].classList.remove('finished');
+      }
+    }
 
-}
-
-function startSimulation(){
-
-  loader.removeClass('finished');
-}
-
-simulateProgress(progressCallback, finishCallback);
-
+    button[index].addEventListener('click', function(){
+       console.log(index);
+       startSimulation();
+       simulateProgress(progressCallback, finishCallback);
+  });
+})
 

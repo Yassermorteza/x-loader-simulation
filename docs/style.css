@@ -1,30 +1,20 @@
-.loader {
-  background-color: #999;
-  max-width: 30%;
-  height: 24px;
-  border-radius: 40px;
-  margin: 0 auto; }
-
-button {
-  position: absolute;
-  top: 35px; }
-
-.loader1 {
-  background-color: #999;
-  max-width: 30%;
-  height: 24px;
-  border-radius: 40px;
-  margin-top: 30px;
-  margin-left: 470px;
-  position: relative; }
-
-.progress {
-  background-color: #333;
-  width: 0%;
-  margin: 2px;
-  height: 20px;
-  margin-left: 10px;
-  display: inline-block;
-  border-radius: 40px; }
-  .progress .finished {
-    background-color: #63F709; }
+div {
+  margin: 25px; }
+  div .loader {
+    background-color: #999;
+    max-width: 30%;
+    height: 24px;
+    border-radius: 40px;
+    border: 2px solid #999;
+    margin: 0 auto; }
+    div .loader .progress {
+      background-color: #333;
+      width: 0%;
+      margin: 2px;
+      margin-right: 1px;
+      height: 20px;
+      border-radius: 40px; }
+      div .loader .progress.finished {
+        background-color: #63F709; }
+    div .loader button {
+      margin-top: 3px; }
