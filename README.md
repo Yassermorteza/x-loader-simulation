@@ -1,4 +1,4 @@
-# x-loader-simulation
+# x-loader-simulation    [![Build Status](https://travis-ci.org/Yassermorteza/x-loader-simulation.svg?branch=master)](https://travis-ci.org/Yassermorteza/x-loader-simulation)
 
 
 Loader Simulation
