@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "jshint && mkdirp docs && cp index.html docs/",
-    "build": "browserify index.js -o docs/bundle.js && node-sass style.scss docs/style.css",
+    "prebuild": "jshint src/index.js && mkdirp docs && cp src/index.html docs/",
+    "build": "browserify src/index.js -o docs/bundle.js && node-sass src/style.scss docs/style.css",
     "postbuild": "uglifyjs docs/bundle.js -o docs/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
