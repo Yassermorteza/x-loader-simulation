@@ -1,5 +1,7 @@
 # x-loader-simulation
 
+https://travis-ci.org/Yassermorteza/x-loader-simulation.svg?branch=master
+
 Loader Simulation
 
 Goal
