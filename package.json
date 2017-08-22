@@ -5,6 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "jshint && mkdirp docs && cp index.html docs/",
+    "build": "browserify index.js -o docs/bundle.js && node-sass style.scss docs/style.css",
+    "postbuild": "uglify docs/bundle.js -o docs/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/Yassermorteza/x-loader-simulation/issues"
   },
-  "homepage": "https://github.com/Yassermorteza/x-loader-simulation#readme"
+  "homepage": "https://github.com/Yassermorteza/x-loader-simulation#readme",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "cp": "^0.2.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.5.3",
+    "jshint": "latest",
+    "uglify-js": "latest",
+    "simulate-progress": "zeropaper/xt-simulate-progress"
+  }
 }
